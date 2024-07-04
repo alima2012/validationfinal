@@ -1,0 +1,573 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 500vh;
+}
+.debut{
+    background-color: rgb(234, 109, 36);
+    padding: 20px;
+}
+.firsts {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: gainsboro;
+    text-align: center;
+    margin-left: 140px;
+}
+/* css navbar */
+.navitem{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+}
+.navitem > ul{
+    display: flex;
+    list-style: none;
+}
+.navitem li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 20px
+}
+/* sousnav */
+.sousnav{
+    position: relative;
+}
+.sousnav > ul{
+    display: flex;
+    list-style: none;
+}
+.sousnav li a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+}
+/* fin sousnav */
+/* sousitems */
+.items{
+    position: relative;
+}
+.sousitems{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    width: max-content;
+}
+.sousitems li a:hover{
+    background-color: #F2F2F2;
+}
+.items:hover .sousitems{
+    display: block;
+}
+/* fin sousitems */
+/* fin css navbar */
+/* customer */
+.customer{
+    margin-top: 300px;
+}
+.entete{
+    margin-top: 20px;
+    text-align: center;
+}
+.spcostumer{
+    color: rgb(190, 6, 6);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sp1costumer{
+    color: rgb(70, 66, 66);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.customerimgs{
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    width: calc(250px * 10);
+    animation: glisse 10s infinite;
+    /* animation-name: imagesdefiles;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.imagescustomer{
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+.imagescustomer img{
+    width: 90%;
+    height: 30vh;
+}
+.imagescustomer .fa{
+    color: rgb(238, 150, 184);  
+    text-align: center;
+}
+.imagescustomer .saveur{
+    text-align: center;
+    color: rgb(190, 6, 6);
+    font: 20px 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.imagescustomer .gout{
+    font: 16px 'Times New Roman', Times, serif;
+    color: #585656;
+}
+.imagescustomer .name{
+    font: 20px 'Times New Roman', Times, serif;
+    color: #b2adad;
+    text-align: center;
+}
+/* fin costomer */
+/* mixes */
+.mixeimages{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+
+}
+.mixes .titre{
+    text-align: center;
+    color: rgb(190, 6, 6);
+    margin-left: 40%;
+    font: 20px 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.mixes img{
+    width: 100%;
+    height: 50vh;
+}
+.mixesimages button{
+    border: none;
+    cursor: pointer;
+}
+.mixesimages button a{
+    border: none;
+    text-decoration: none;
+}
+/* fin mixes */
+/* css recipes */
+.recipes{
+    margin-top: 600px;  
+}
+.monimage .imagefonds{
+    width: 100%;
+    height: 70vh;  
+    position: absolute;
+}
+.surimages{
+    position: relative;
+    top: 20px;
+    left: auto;
+    text-align: center;
+}
+.surimages span{
+    color: rgb(190, 6, 6);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* image 1 */
+.images1{
+    position: relative;
+    top: 50px;
+    float: left;
+    margin-left: 150px;
+    background-color: #fff;
+    height: 350px;
+}
+.images1 .imgsfonds{
+    width: 100%;
+    height: 250px;
+}
+.fondblanc{
+    position: absolute;
+    top: 2130px;
+    float: left;
+    margin-left: 170px;   
+}
+.fondblanc span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fondblanc a{
+    margin-top: 50px;
+    color: gray;
+    font-size: 20px;
+}
+.fondblanc1{
+    position: absolute;
+    float: left;
+    top: 2130px;
+    margin-left: 630px;
+}
+.fondblanc1 span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fondblanc1 a{
+    margin-top: 50px;
+    color: gray;
+    font-size: 20px;
+}
+.fondblanc2{
+    position: absolute;
+    float: left;
+    top: 2130px;
+    margin-left: 1090px;
+}
+.fondblanc2 span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fondblanc2 a{
+    margin-top: 50px;
+    color: gray;
+    font-size: 20px;
+}
+.btnrecipes{
+    position: absolute;
+    float: left;
+    top: 270%;
+    margin-left: 48%;
+  
+}
+.btnrecipes button{
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.btnrecipes a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.btnrecipes button:hover{
+    background-color: #fff;
+}
+/* fin images 1 */
+/* fin css recipes */
+
+/* css teste */
+.findout{
+    margin-top: 600px;
+   text-align: center;
+   color: rgb(190, 6, 6);
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   font-size: 20px;
+   /* top: 500px; */
+}
+.test{
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    margin-top: 110px;
+}
+.test .imgtest{
+   height: 250px;
+   width: 400px;
+   padding-left: 40px;
+   gap: 10px;
+}
+.test .imgtest:hover{
+    cursor: pointer;
+}
+.texte .sp1{
+    margin-left: 40px;
+}
+.texte{
+    text-decoration: none;
+    margin-top: 10px;
+}
+.texte .sp2{
+    padding: 40px; 
+}
+.texte .sp3{
+    padding: 40px;  
+}
+.texte span{
+    color: rgb(176, 74, 51);
+    font: 20px sans-serif;
+    font-weight: bold;
+    list-style: none;
+    line-height: 20px;
+}
+.images p{
+    margin-left: 40px;
+    margin-top: 20px;
+    font: 16px sans-serif;
+}
+.readmore{
+   text-decoration: underline;
+   margin-left: 40px;
+   margin-bottom: 100%;
+   color: #474343;
+}
+/* fin css teste */
+/* btnview */
+.btnview{
+    text-align: center;   
+}
+.btnview button{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #474343;
+}
+.btnview a{
+    text-decoration: none;
+    color: #fff;
+    font: 17px bold arial;
+}
+/* fin btnview */
+/* about us section3 */
+.section3{
+    margin-top: 150px;
+}
+.section3 img{
+    width: 40%;
+    margin-left: 10%;
+    float: left;
+}
+.droite{
+    float: right;
+    margin-top: 8%;
+}
+.aboutus{
+    text-align: center;
+    font: 20px arial;
+    font-weight: bold;
+    color: rgb(146, 20, 20);
+    margin-top: 25%; 
+}
+.texte3{
+    margin-top: 10%;
+    color: rgb(112, 110, 110);
+    margin-bottom: 10%;
+    margin-right: 200px
+}
+.change{
+    color: rgb(146, 20, 20);
+    font: 20px arial;
+    font-weight: bold;   
+}
+.sousnav{
+    margin-top: 750px;
+    margin-left: 40%; 
+}
+
+.sousnavbar li{
+    list-style: none; 
+}
+.sousnavbar li a{
+    color: rgb(120, 118, 118);
+    font-weight: bold;
+    font-size: 20px;
+}
+.sousnavbar li a:hover{
+    color: rgb(120, 118, 118);  
+}
+.sousnavbar li a:active{
+    color: rgb(146, 20, 20);
+    outline: auto;   
+}
+/* fin about us section3 */
+/* css section subscribe */
+.subscribe{
+    margin-top: 80px;
+}
+.imgfond img{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+}
+.surimage{
+   position: relative;
+   top: 130px;
+   left: auto;
+   text-align: center;   
+}
+.surimage span{
+    color: #0d0d0d;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.surimage p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    color: #0d0d0d;
+}
+.surimage input{
+    margin-top: 60px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 20%;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    border: none;
+}
+.surimage button{
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    width: 10%;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.piedpage{
+    margin-top: 250px;
+    background-color: rgb(245, 203, 120);
+    height: 520px;
+}
+.crave{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.crave > ul{
+    display: flex;
+    list-style: none;
+    padding: 80px;
+}
+.crave li .itemcrave{
+    text-decoration: none;
+    color: rgb(104, 103, 103);
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: none;
+}
+.oursite{
+    margin-left: 200px;
+}
+.newslet{
+    margin-left: 10px;
+}
+.craves p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;  
+}
+.craves img{
+    float: left;
+    width: 40%;
+    margin-right: 20%;
+}
+.craves .sociallinks{
+    margin-top: 150px;  
+}
+.sociallinks .followus a{
+    color: rgb(104, 103, 103);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: none;
+}
+.sociallinks ul{
+    list-style: none;
+    width: 100%;
+}
+.sociallinks ul li{
+    display: inline-block;
+    margin: 5px 10px;
+   
+}
+.sociallinks ul li a{
+    color: rgb(60, 59, 59);
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* fin crave */
+/* debut our site */
+.oursite{
+    width: 100%;
+}
+.oursite ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+}
+.outsite li{
+    margin-top: 20px;
+}
+.ousite ul li{
+    display: flex;
+}
+.oursite ul li a{
+    color: rgb(112, 29, 29);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.newslet{
+    width: 90%;
+}
+.newslet p{
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.newslet input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 45%;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.newslet button{
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 15px;
+    width: 30%;
+    border: none;
+    background-color: rgb(81, 77, 77);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.p1{
+    float: left;
+    margin-right: 20px;
+}
+
+/* fin our site */
+
