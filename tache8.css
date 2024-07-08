@@ -68,10 +68,419 @@ body{
     display: block;
 }
 /* fin sousitems */
+/* background */
+.diaporama{
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background-image: url(images/pranareduction4.jfif);
+
+    /* animation */
+    -webkit-animation-name: diapo;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+
+    animation-name: diapo;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@-webkit-keyframes diapo{
+    0%{
+        background-image: url(images/pranareduction4.jfif);
+    }
+    50%{
+        background-image: url(images/pranareduction2.jfif);
+    }
+    75%{
+        background-image: url(images/pranareduction1.jfif);
+    }
+}
+@keyframes diapo{
+    0%{
+        background-image: url(images/pranareduction4.jfif);
+    }
+    50%{
+        background-image: url(images/pranareduction2.jfif);
+    }
+    75%{
+        background-image: url(images/pranareduction1.jfif);
+    }
+}
+/* fin background */
+/* mixes */
+.mixes{
+    margin-top: 50px;
+}
+.mixeimages{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.mixes .titre{
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(190, 6, 6);
+    margin-left: 30%;
+    font: 35px 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.mixes img{
+    width: 80%;
+    height: 40vh;
+    cursor: pointer;
+    position: relative;
+    transition: transform .1s;
+}
+.mixes img:hover{
+    -ms-transform: scale(0.75);
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+}
+/* soldout */
+.soldout{
+    position: absolute;
+    top: 28%;
+    right: 22%;
+    width: 90px;
+    background-color: #fff;
+    height: 25px;
+    text-align: center;
+}
+.sdout{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* fin soldout */
+/* onsale */
+.onsale{
+    position: absolute;
+    top: 102%;
+    left: 30%;
+    width: 60px;
+    background-color: #fff;
+    height: 25px;
+    text-align: center;
+}
+.oout{
+    font-weight: bold;
+    font-size: 16px;
+}
+.onsales{
+    position: absolute;
+    top: 102%;
+    left: 53%;
+    width: 60px;
+    background-color: #fff;
+    height: 25px;
+    text-align: center;
+}
+.oouts{
+    font-weight: bold;
+    font-size: 16px;
+}
+.onsalee{
+    position: absolute;
+    top: 102%;
+    left: 77%;
+    width: 60px;
+    background-color: #fff;
+    height: 25px;
+    text-align: center;
+}
+.ooute{
+    font-weight: bold;
+    font-size: 16px;
+}
+/* onsale */
+.imagescustomer .btn1{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 50px;
+}
+.imagescustomer .btn1 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.imagescustomer .btn2{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 70px;
+}
+.imagescustomer .btn2 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase;   
+}
+.imagescustomer .valeur{
+    color: rgb(240, 9, 9);
+    margin-left: 95px;
+}
+.imagescustomer .reduction{
+    color: rgb(113, 106, 106);
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.imagescustomer .btn3{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 5px;
+}
+.imagescustomer .btn3 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.imagescustomer .btn4{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 20px;
+}
+.imagescustomer .btn4 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+.imagescustomer .btn5{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 90px;
+}
+.imagescustomer .btn5 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+.imagescustomer .btn6{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 10px;
+}
+.imagescustomer .btn6 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+.imagescustomer .btn7{
+    border: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 100px;
+    
+}
+.imagescustomer .btn7 a{
+    color: rgb(113, 106, 106);
+    text-decoration: none;
+    text-transform: uppercase; 
+}
+.viewproducts .product{
+    border: none;
+    font-size: 18px;
+    background-color: gray;
+    margin-left: 40%;
+    padding: 20px;
+    border-radius: 20px;
+}
+.product a{
+    color: #fff;
+    text-decoration: none;
+}
+.soldout{
+    position: relative;
+    top: 20px;
+}
+/* fin mixes */
+/* section products */
+.prdcts{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    gap: 15px;
+    margin: 30px
+}
+.prdcts img{
+    width: 100%;
+    height: 60vh;
+    position: relative;  
+}
+/* imgs1 */
+.imgs1 .cook{
+    position: absolute;
+    left: 5%;
+    top: 198%;
+    text-decoration: none;
+    font-weight: bold;
+    font: 38px 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.imgs1 .btnproduct{
+    position: absolute;
+    top: 205%;
+    left: 5%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.btnproduct a{
+    font: 20px 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.imgs1{
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgs1 img{
+    transition: .5s;
+}
+.imgs1 img:hover{
+    -ms-transform: scale(1.5) translate(2px);
+    -webkit-transform: scale(1.5) translate(2px);
+    transform: scale(1.5) translate(2px);
+}
+/* fin imgs1 */
+/* images 2 */
+.imgs2 .breakfast{
+    position: absolute;
+    left: 32%;
+    top: 198%;
+    text-decoration: none;
+    font-weight: bold;
+    font: 38px 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.imgs2 .btnproduct1{
+    position: absolute;
+    top: 205%;
+    left: 32%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.btnproduct1 a{
+    font: 20px 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.imgs2{
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgs2 img{
+    transition: .5s;
+}
+.imgs2 img:hover{
+    -ms-transform: scale(1.5) translate(2px);
+    -webkit-transform: scale(1.5) translate(2px);
+    transform: scale(1.5) translate(2px);
+}
+/* fin images 2 */
+/* images 3 */
+.imgs3 .snaking{
+    position: absolute;
+    left: 67%;
+    top: 198%;
+    text-decoration: none;
+    font-weight: bold;
+    font: 38px 'Times New Roman', Times, serif;
+    color: #fff;
+}
+.imgs3 .btnproduct2{
+    position: absolute;
+    top: 205%;
+    left: 67%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+.btnproduct2 a{
+    font: 20px 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.imgs3{
+    overflow: hidden;
+    cursor: pointer;
+}
+.imgs3 img{
+    transition: .5s;
+}
+.imgs3 img:hover{
+    -ms-transform: scale(1.5) translate(2px);
+    -webkit-transform: scale(1.5) translate(2px);
+    transform: scale(1.5) translate(2px);
+}
+/* fin images 3 */
+/* prana route */
+.routeprana .routes{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+.texteroute{
+    background-color: #fff;
+    position: absolute;
+    top: 1750px;
+    left: 500px;
+    width: 30%;
+    height: 40vh;
+    text-align: center;
+    /* margin-bottom: 200px; */
+}
+.texteroute .prana1{
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.texteroute .prana2{
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #b2adad;
+}
+.findhow{
+    position: absolute;
+    top: 1880px;
+    left: 670px;
+    margin-top: 100px;
+    font-size: 20px;
+}
+.findhow a{
+    text-decoration: none;
+    color: #000;
+}
+/* fin prana route */
+/* fin section products */
 /* fin css navbar */
 /* customer */
 .customer{
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .entete{
     margin-top: 20px;
@@ -145,36 +554,11 @@ body{
     text-align: center;
 }
 /* fin costomer */
-/* mixes */
-.mixeimages{
-    display: flex;
-    margin: 20px;
-    justify-content: center;
 
-}
-.mixes .titre{
-    text-align: center;
-    color: rgb(190, 6, 6);
-    margin-left: 40%;
-    font: 20px 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-.mixes img{
-    width: 100%;
-    height: 50vh;
-}
-.mixesimages button{
-    border: none;
-    cursor: pointer;
-}
-.mixesimages button a{
-    border: none;
-    text-decoration: none;
-}
-/* fin mixes */
+
 /* css recipes */
 .recipes{
-    margin-top: 600px;  
+    margin-top: 100px;  
 }
 .monimage .imagefonds{
     width: 100%;
@@ -208,7 +592,7 @@ body{
 }
 .fondblanc{
     position: absolute;
-    top: 2130px;
+    top: 3150px;
     float: left;
     margin-left: 170px;   
 }
@@ -225,7 +609,7 @@ body{
 .fondblanc1{
     position: absolute;
     float: left;
-    top: 2130px;
+    top: 3140px;
     margin-left: 630px;
 }
 .fondblanc1 span{
@@ -241,7 +625,7 @@ body{
 .fondblanc2{
     position: absolute;
     float: left;
-    top: 2130px;
+    top: 3150px;
     margin-left: 1090px;
 }
 .fondblanc2 span{
@@ -257,7 +641,7 @@ body{
 .btnrecipes{
     position: absolute;
     float: left;
-    top: 270%;
+    top: 450%;
     margin-left: 48%;
   
 }
