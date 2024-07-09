@@ -17,6 +17,9 @@ body{
     margin-left: 140px;
 }
 /* css navbar */
+.navbar{
+    display: flex;
+}
 .navitem{
     position: sticky;
     top: 0;
@@ -29,29 +32,56 @@ body{
 }
 .navitem li a{
     text-decoration: none;
-    color: #000;
+    color: rgb(190, 6, 6);
     display: block;
     padding: 20px
 }
-/* sousnav */
-.sousnav{
-    position: relative;
-}
-.sousnav > ul{
-    display: flex;
-    list-style: none;
-}
-.sousnav li a{
-    text-decoration: none;
-    color: #000;
-    display: block;
-    padding: 10px;
-}
+
 /* fin sousnav */
 /* sousitems */
 .items{
     position: relative;
+    width: 15%;
+    display: flex;
 }
+/* navitems */
+.items .navitemes{
+    display: flex;
+    list-style: none;
+}  
+.items .navitemes{
+    display: none;
+    margin: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    width: max-content;
+}
+.navitemes li a{
+    color: #000;
+}
+.navitemes li a:hover{
+    background-color: #fff;
+}
+.items:hover .navitemes{
+    display: flex;
+}
+.navitemes li a{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    display: block;
+    padding: 10px
+} 
+.navitemes .snav .tete{
+    color: rgb(190, 6, 6);
+}
+.sousnavitem{
+    list-style: none;
+    padding: 10px;
+}
+
+/* fin navitems */
 .sousitems{
     list-style: none;
     display: none;
@@ -61,6 +91,9 @@ body{
     background-color: #fff;
     width: max-content;
 }
+.sousitems li a{
+    color: #000;
+}
 .sousitems li a:hover{
     background-color: #F2F2F2;
 }
@@ -68,6 +101,51 @@ body{
     display: block;
 }
 /* fin sousitems */
+/* logoprana */
+.logo{
+    margin-left: 5%;
+}
+.logoprana{
+    width: 10%;
+    margin-left: 35%;
+}
+.icones{
+   display: flex;
+   margin-right: 5%;
+   bottom: 5px;
+}
+.icones .fa{
+    margin: 5px;
+    color: rgb(190, 6, 6);
+    padding: 5px;
+}
+.langue{
+    border: 2px solid rgb(190, 6, 6);
+    border-radius: 5px;
+    height: 16px;
+    margin: 12px;
+    padding: 1px;
+}
+.langue a{
+    color: rgb(190, 6, 6);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.pays{
+    margin-right: 12%;
+    margin: 10px;
+}
+.paysname{
+    border: none;
+    color: rgb(190, 6, 6);
+    font-weight: bold;
+}
+.paysname .names{
+    color: rgb(190, 6, 6);
+}
+/* fin logoprana */
 /* background */
 .diaporama{
     margin: 0 auto;
@@ -113,38 +191,42 @@ body{
 /* fin background */
 /* mixes */
 .mixes{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .mixeimages{
     display: flex;
-    margin: 20px;
-    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    /* margin: 20px; */
 }
 .mixes .titre{
-    margin-top: 20px;
     text-align: center;
     color: rgb(190, 6, 6);
-    margin-left: 30%;
+    margin-left: 35%;
     font: 35px 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-.mixes img{
+.imagescustomers img{
     width: 80%;
     height: 40vh;
     cursor: pointer;
     position: relative;
-    transition: transform .1s;
+    transition: transform 1s;
+}
+.imagescustomers .imagesp{
+    margin-left: 40px
+
 }
 .mixes img:hover{
-    -ms-transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    transform: scale(0.75);
+    -ms-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
 }
 /* soldout */
 .soldout{
     position: absolute;
     top: 28%;
-    right: 22%;
+    right: 20%;
     width: 90px;
     background-color: #fff;
     height: 25px;
@@ -154,85 +236,42 @@ body{
     font-weight: bold;
     font-size: 16px;
 }
-
-/* fin soldout */
-/* onsale */
-.onsale{
-    position: absolute;
-    top: 102%;
-    left: 30%;
-    width: 60px;
-    background-color: #fff;
-    height: 25px;
-    text-align: center;
-}
-.oout{
-    font-weight: bold;
-    font-size: 16px;
-}
-.onsales{
-    position: absolute;
-    top: 102%;
-    left: 53%;
-    width: 60px;
-    background-color: #fff;
-    height: 25px;
-    text-align: center;
-}
-.oouts{
-    font-weight: bold;
-    font-size: 16px;
-}
-.onsalee{
-    position: absolute;
-    top: 102%;
-    left: 77%;
-    width: 60px;
-    background-color: #fff;
-    height: 25px;
-    text-align: center;
-}
-.ooute{
-    font-weight: bold;
-    font-size: 16px;
-}
-/* onsale */
-.imagescustomer .btn1{
+.imagescustomers .btn1{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     background-color: #fff;
     text-align: center;
-    margin-left: 50px;
+    margin-left: 80px;
 }
-.imagescustomer .btn1 a{
+.imagescustomers .btn1 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase;
 }
-.imagescustomer .btn2{
+.imagescustomers .btn2{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     background-color: #fff;
     text-align: center;
-    margin-left: 70px;
+    margin-left: 100px;
 }
-.imagescustomer .btn2 a{
+.imagescustomers .btn2 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase;   
 }
-.imagescustomer .valeur{
+.imagescustomers .valeur{
     color: rgb(240, 9, 9);
     margin-left: 95px;
 }
-.imagescustomer .reduction{
+.imagescustomers .reduction{
     color: rgb(113, 106, 106);
     margin-left: 20px;
     text-decoration: line-through;
 }
-.imagescustomer .btn3{
+.imagescustomers .btn3{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -240,13 +279,13 @@ body{
     text-align: center;
     margin-left: 5px;
 }
-.imagescustomer .btn3 a{
+.imagescustomers .btn3 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase;
     margin-left: 10px;
 }
-.imagescustomer .btn4{
+.imagescustomers .btn4{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -254,12 +293,12 @@ body{
     text-align: center;
     margin-left: 20px;
 }
-.imagescustomer .btn4 a{
+.imagescustomers .btn4 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase; 
 }
-.imagescustomer .btn5{
+.imagescustomers .btn5{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -267,12 +306,12 @@ body{
     text-align: center;
     margin-left: 90px;
 }
-.imagescustomer .btn5 a{
+.imagescustomers .btn5 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase; 
 }
-.imagescustomer .btn6{
+.imagescustomers .btn6{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -280,12 +319,12 @@ body{
     text-align: center;
     margin-left: 10px;
 }
-.imagescustomer .btn6 a{
+.imagescustomers .btn6 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase; 
 }
-.imagescustomer .btn7{
+.imagescustomers .btn7{
     border: none;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
@@ -294,7 +333,7 @@ body{
     margin-left: 100px;
     
 }
-.imagescustomer .btn7 a{
+.imagescustomers .btn7 a{
     color: rgb(113, 106, 106);
     text-decoration: none;
     text-transform: uppercase; 
@@ -351,6 +390,7 @@ body{
 .btnproduct a{
     font: 20px 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: #000;
 }
 .imgs1{
     overflow: hidden;
@@ -387,6 +427,7 @@ body{
 .btnproduct1 a{
     font: 20px 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: #000;
 }
 .imgs2{
     overflow: hidden;
@@ -423,6 +464,7 @@ body{
 .btnproduct2 a{
     font: 20px 'Times New Roman', Times, serif;
     text-decoration: none;
+    color: #000;
 }
 .imgs3{
     overflow: hidden;
@@ -498,36 +540,23 @@ body{
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
-.customerimgs{
-    display: flex;
-    margin-top: 60px;
-    justify-content: center;
-    width: calc(250px * 10);
-    animation: glisse 10s infinite;
-    /* animation-name: imagesdefiles;
-    animation-iteration-count: infinite; */
+.customer{
+    display: grid;
+    margin: auto;
+    position: relative;
+    place-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
 }
-
-@keyframes glisse{
-    0%{
-        transform: translateX(0);
-    }
-    33%{
-        transform: translateX(-500px);
-    }
-    66%{
-        transform: translateX(-1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
 .imagescustomer{
     margin: 10px;
     justify-content: center;
     align-items: center;
     display: inline-block;
+}
+.imagescustomer .img{
+    height: 250px;
 }
 .imagescustomer img{
     width: 90%;
@@ -554,8 +583,6 @@ body{
     text-align: center;
 }
 /* fin costomer */
-
-
 /* css recipes */
 .recipes{
     margin-top: 100px;  
@@ -592,7 +619,7 @@ body{
 }
 .fondblanc{
     position: absolute;
-    top: 3150px;
+    top: 3060px;
     float: left;
     margin-left: 170px;   
 }
@@ -609,7 +636,7 @@ body{
 .fondblanc1{
     position: absolute;
     float: left;
-    top: 3140px;
+    top: 3060px;
     margin-left: 630px;
 }
 .fondblanc1 span{
@@ -625,7 +652,7 @@ body{
 .fondblanc2{
     position: absolute;
     float: left;
-    top: 3150px;
+    top: 3060px;
     margin-left: 1090px;
 }
 .fondblanc2 span{
@@ -641,7 +668,7 @@ body{
 .btnrecipes{
     position: absolute;
     float: left;
-    top: 450%;
+    top: 430%;
     margin-left: 48%;
   
 }
@@ -948,10 +975,112 @@ body{
     font-size: 16px;
     cursor: pointer;
 }
+.sousnavbar{
+    display: flex;
+    width: 50%;
+    gap: 20px;
+} 
+.sousnavbar a{
+    text-decoration: none;
+}
 .p1{
     float: left;
     margin-right: 20px;
 }
-
+.sousfooter{
+    margin: 10px;
+}
+.langage{
+    margin: 20px;
+    padding: 10px;
+}
+.langagename{
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+.pranaorganic{
+    margin-top: 10px;
+}
+.porganic{
+    font-weight: bold;
+}
+.powered{
+    margin-left: 2px;
+}
 /* fin our site */
+/* responsive */
+@media(maxwidth: 767px){
+    .navitem{
+        width: 100%;
+    }
+    .mixes{
+        width: 100%;
+    }
+    .products{
+        width: 100%;
+    }
+    .routeprana{
+        width: 100%;
+    }
+    .customer{
+        width: 100%;
+    }
+    .recipes{
+        width: 100%;
+    }
+    .test{
+        width: 100%;
+    }
+    .section3{
+        width: 100%;
+    }
+    .sousnav{
+        width: 100%;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .piedpage{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media(maxwidth: 574px){
+    .navitem{
+        width: 100%;
+    }
+    .mixes{
+        width: 100%;
+    }
+    .products{
+        width: 100%;
+    }
+    .routeprana{
+        width: 100%;
+    }
+    .customer{
+        width: 100%;
+    }
+    .recipes{
+        width: 100%;
+    }
+    .test{
+        width: 100%;
+    }
+    .section3{
+        width: 100%;
+    }
+    .sousnav{
+        width: 100%;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .piedpage{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+/* fin responsive */
 
